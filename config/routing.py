@@ -17,7 +17,13 @@ def make_map():
     map.connect('error/:action/:id', controller='error')
 
     # CUSTOM ROUTES HERE
-
+    map.connect('/move', controller='chess', action='move')
+    map.connect('/getNotifications', controller='chess', action='getNotifications')
+    map.connect('/connectToGame', controller='chess', action='connectToGame')
+    map.connect('/initClient', controller='chess', action='initClient')
+    map.connect('/getUser', controller='chess', action='getUser')
+    map.connect('/addUser', controller='chess', action='addUser')
+    map.connect('/getGamesList', controller='chess', action='getGamesList')
     map.connect('/n', controller='hello', action='getNotification')
     map.connect('/i', controller='hello', action='serverinfo')
     map.connect('/f', controller='hello', action='app_globals_test')

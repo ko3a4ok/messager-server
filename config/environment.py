@@ -6,6 +6,7 @@ from pylons import config
 import helloworld.lib.app_globals as app_globals
 import helloworld.lib.helpers
 from helloworld.config.routing import make_map
+import sys
 
 def load_environment(global_conf, app_conf):
     """Configure the Pylons environment via the ``pylons.config``
